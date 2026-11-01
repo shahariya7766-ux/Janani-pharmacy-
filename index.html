@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#16764a">
+<title>Janani Pharmacy</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="login" class="login-wrap">
+ <div class="login-card">
+  <div class="logo">✚</div><h1>Janani Pharmacy</h1><p data-bn="ফার্মেসি ম্যানেজমেন্ট" data-en="Pharmacy Management">ফার্মেসি ম্যানেজমেন্ট</p>
+  <form id="loginForm"><label data-bn="ইউজারনেম" data-en="Username">ইউজারনেম</label><input name="username" autocomplete="username" required>
+  <label data-bn="পাসওয়ার্ড" data-en="Password">পাসওয়ার্ড</label><input name="password" type="password" autocomplete="current-password" required>
+  <button class="primary" data-bn="লগইন" data-en="Log in">লগইন</button></form><div id="loginMsg" class="msg"></div>
+  <small data-bn="প্রথমে Owner অ্যাকাউন্ট Hosting-এর Environment Variables দিয়ে তৈরি করতে হবে।" data-en="Create the first owner account using hosting environment variables.">প্রথমে Owner অ্যাকাউন্ট Hosting-এর Environment Variables দিয়ে তৈরি করতে হবে।</small>
+ </div>
+</div>
+<div id="app" class="hidden">
+<header><div class="brand"><span class="logo small">✚</span><div><b>Janani Pharmacy</b><small data-bn="ম্যানেজমেন্ট সিস্টেম" data-en="Management System">ম্যানেজমেন্ট সিস্টেম</small></div></div><div class="head-actions"><button id="langBtn" class="ghost">English</button><button id="logout" class="ghost" data-bn="লগআউট" data-en="Log out">লগআউট</button></div></header>
+<div class="layout"><nav id="nav">
+<button class="nav active" data-page="dashboard">▦ <span data-bn="ড্যাশবোর্ড" data-en="Dashboard">ড্যাশবোর্ড</span></button>
+<button class="nav" data-page="medicines">▤ <span data-bn="ওষুধের স্টক" data-en="Medicine stock">ওষুধের স্টক</span></button>
+<button class="nav" data-page="transactions">⇄ <span data-bn="কেনা-বেচা" data-en="Purchase & Sales">কেনা-বেচা</span></button>
+<button class="nav" data-page="reports">▥ <span data-bn="রিপোর্ট" data-en="Reports">রিপোর্ট</span></button>
+<button class="nav" data-page="users">♙ <span data-bn="কর্মচারী" data-en="Employees">কর্মচারী</span></button>
+<button class="nav" data-page="activity">◷ <span data-bn="কার্যক্রমের ইতিহাস" data-en="Activity log">কার্যক্রমের ইতিহাস</span></button>
+</nav><main id="main"></main></div>
+</div>
+<script src="/app.js"></script>
+</body></html>
